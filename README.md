@@ -1,10 +1,7 @@
-# linux scripts
+# changes made in the readme file
 
-cd change dir
-mkdir
-netstat -tulpn
-systemctl daemon-reload
-systemctl status linux
-systemctl restart linux
+all the bash scripting and protocols needs to be addressed
 
-## few linux scripts"
+# bash scripting
+
+# linux scripting
