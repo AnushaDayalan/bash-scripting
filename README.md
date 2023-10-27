@@ -5,7 +5,9 @@ To learn shell scripting
 
 // this file is readme . MD
 
+ you need to learn coding
 git add .
 ...
 git commit - m
 git push
+shellscripting and linux are two different languages
