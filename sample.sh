@@ -1,8 +1,1 @@
-#!/bin/bash
-hi
-there
-welcomeclous
-git
-gut
-git
-cloud
+echo they there welcome to cloud
