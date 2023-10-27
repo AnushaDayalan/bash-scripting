@@ -1,3 +1,8 @@
 #!/bin/bash
-
-hey there welcome cloud
+hi
+there
+welcomeclous
+git
+gut
+git
+cloud
