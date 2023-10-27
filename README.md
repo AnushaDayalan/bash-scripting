@@ -1,13 +1,10 @@
-# bash-scripting
-To learn shell scripting
+# linux scripts
 
-# this repos is very useful and contains all basics 
+cd change dir
+mkdir
+netstat -tulpn
+systemctl daemon-reload
+systemctl status linux
+systemctl restart linux
 
-// this file is readme . MD
-
- you need to learn coding
-git add .
-...
-git commit - m
-git push
-shellscripting and linux are two different languages
+## few linux scripts"
