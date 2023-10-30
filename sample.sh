@@ -6,3 +6,8 @@ echo -e " 10 \n 12 13 15 16"
 
 echo hi there
 echo -e "line 1 \n line 2 \n line 3"
+echo "Anusha is the best"
+echo "run new file \n new file , page line "
+
+
+git add
