@@ -3,4 +3,4 @@ b=are
 c=60
 
 echo $a
-echo c
+echo ${c}
