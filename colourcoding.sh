@@ -1,2 +1,1 @@
-echo "[\m33 yellow colour \[m0"
-
+echo  -e "\e[33m hi yellow \e[0m"
