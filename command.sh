@@ -2,5 +2,9 @@
 
 Date="$(date +%F)"
 
-#echo -e "(Date = +%F)"
 echo = " Today date is $Date"
+
+Day="$(Day +%C)"
+
+echo "Today Day is $Day"
+
