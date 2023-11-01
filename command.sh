@@ -1,2 +1,2 @@
 Date= "$(date +%F)"
-echo= "Today Date is $Date"
+echo "Today Date is $Date"
