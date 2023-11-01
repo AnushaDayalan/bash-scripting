@@ -1,3 +1,3 @@
 #!bin/bash
-Date= "$(Date +%c)"
+Date= "$(date +%c)"
 echo= "Today Date is $Date"
