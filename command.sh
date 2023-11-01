@@ -1,5 +1,5 @@
 #!/bin/bash
 
 Date="$(date +%C)"
-echo "Today date is $Date"
+echo -e "\e [34m Today date is $Date \e[0m"
 
