@@ -6,5 +6,5 @@ echo = " Today date is $Date"
 
 Day="$(Day +%C)"
 
-echo "Today Day is $Day"
+echo = " Today Day is $Day"
 
