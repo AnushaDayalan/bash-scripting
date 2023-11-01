@@ -1,6 +1,6 @@
 #!bin/bash
 
-Date="01-Nov-2023"
-echo -e "(Date = +%F)"
-echo date = $
+Date="$(date +%F)"
 
+#echo -e "(Date = +%F)"
+echo = " Today date is $Date"
