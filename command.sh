@@ -1,10 +1,6 @@
 #!bin/bash
 
-Date="$(date +%F)"
+Date="$(Date +%c)"
 
-echo = " Today date is $Date"
-
-Day="$(Day +%C)"
-
-echo = " Today Day is $Day"
+echo ="Today Date is $Date"
 
