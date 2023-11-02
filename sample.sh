@@ -6,8 +6,8 @@ Date=$(date +%F)
 
 
 echo -e "\e PPrint todays date =$Date"
-echo $0
+echo $1
 #Talented_Person=$Anusha
 
-echo -e "\e PPrint talented person =$0"
+echo -e "\e PPrint talented person =$2
 
