@@ -1,8 +1,12 @@
 Session_Count=$(who | wc -l)
 
-echo -e "\e PPPrint the sessioncounts as = $Session_Count"
+echo -e "\e PPrint the sessioncounts as = $Session_Count"
 
 Date=$(date +%F)
 
-echo -e "\e PPPrint todays date =$1"
+echo -e "\e PPrint todays date =$1"
+
+Talented_Person=$(Name)
+
+echo "\e PPrint talented person =$Talented_Person_Anusha"
 
