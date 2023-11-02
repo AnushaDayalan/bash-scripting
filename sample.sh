@@ -8,5 +8,5 @@ echo -e "\e PPrint todays date =$1"
 
 Talented_Person=$(Name)
 
-echo "\e PPrint talented person =$Talented_Person_Anusha"
+echo "\e PPrint talented person =$2"
 
