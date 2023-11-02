@@ -10,4 +10,4 @@ echo "\e Print  date is = $Date"
 
 Talented_Guest = \e$(Anusha)
 
-echo "\ePrint talented guest =$1"
+echo "\e Print talented guest =$1"
