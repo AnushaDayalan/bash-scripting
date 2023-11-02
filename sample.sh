@@ -4,10 +4,9 @@ echo -e "\e PPrint the sessioncounts as = $Session_Count"
 
 Date=$(date +%F)
 
-echo -e "\e PPrint todays date =$1"
+echo -e "\e PPrint todays date =$Date"
 
 Talented_Person=Anusha
-echo "Talented_Person= $Talented_Person"
 
-echo -e "\e PPrint talented person =$Bala"
+echo -e "\e PPrint talented person =$2"
 
