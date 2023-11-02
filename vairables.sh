@@ -6,5 +6,7 @@ echo -e "\e[33m Type current count  is $Session_Count \e[0m"
 
 Date="$(date +%F)"
 
-echo "Print  = $Date"
+echo "Print  date is = $Date"
 
+Talented_Guest =$Anusha
+echo "Print talented guest =$0"
