@@ -8,5 +8,5 @@ Date="$(date +%F)"
 
 echo "Print  date is = $Date"
 
-Talented_Guest =$Anusha
+Talented_Guest ="$Anusha"
 echo "Print talented guest =$0"
