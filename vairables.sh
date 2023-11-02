@@ -4,7 +4,7 @@ echo " Type current is = $Session_Count"
 
 echo -e "\e[33m Type current count  is $Session_Count \e[0m"
 
-Date=$(date +%F)
+Date="$(date +%F)"
 
 echo "Print date = $Date"
 
