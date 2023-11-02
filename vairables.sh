@@ -9,11 +9,11 @@ echo -e "\e Print date is $(date +%F)"
 
 sleep 10
 
-stat
+stat()
 
 sleep 13
  
-stat 
+stat()
 # echo -e "\e Print collelge name =$1"
 # echo -e "\e Print logo name =$2"
 # echo $#
