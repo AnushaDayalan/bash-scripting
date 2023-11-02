@@ -8,5 +8,6 @@ Date="$(date +%F)"
 
 echo "Print  date is = $Date"
 
-Talented_Guest ="$Anusha"
-echo "Print talented guest =$0"
+Talented_Guest= -e "\e$(Anusha)"
+echo "\ePrint talented guest =$1"
+
