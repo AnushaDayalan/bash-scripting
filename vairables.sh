@@ -1,5 +1,5 @@
 #!/bin/bash
 
-Session_Count = "$(who | wc -l)"
+Session_Count= "$(who | wc -l)"
 
-echo " Type current $Session_Count"
+echo " Type current is = $Session_Count"
