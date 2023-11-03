@@ -12,10 +12,6 @@ hello() {
     echo "learning daily linux is useful for $2"
 
 }
+ echo "\e show uptime $(uptime | awk  -F : '{print $1}'
 
-stat 
-
-hello
-
-stat
-hello
+ 
