@@ -18,3 +18,4 @@ stat
 hello
 
 stat
+hello
