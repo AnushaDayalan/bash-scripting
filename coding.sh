@@ -15,5 +15,5 @@ hello() {
 
 hello
 stat
-echo "\e show uptime $(uptime | awk  -F : '{print $1}')"
+echo "\eshow uptime $(uptime | awk  -F : '{print $NF}')"
 
