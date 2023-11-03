@@ -1,6 +1,6 @@
 stat() {
 
-echo -e "\e[34m;41 Show todays date =$(date +%F)\e[0m"
+echo -e "\e[34m;41m Show todays date =$(date +%F)\e[0m"
 
 echo -e "\e[33m Show session_count =$(who | wc -l)\e[0m"
 
