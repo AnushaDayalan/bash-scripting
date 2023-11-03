@@ -1,6 +1,6 @@
 stat() {
 
-echo -e "\e[34m;41m Show todays date =$(date +%F)\e[0m"
+echo -e "\e[34m Show todays date =$(date +%F)\e[0m"
 
 echo -e "\e[33m Show session_count =$(who | wc -l)\e[0m"
 
@@ -8,8 +8,8 @@ echo -e "\e[33m Show session_count =$(who | wc -l)\e[0m"
 
 hello() {  
 
-echo $1
-    echo -e "hi this is anusha dayalan performing coding $2"
+    echo  "hi this is anusha dayalan performing coding $1"
+    echo "learning daily linux is useful for $2"
 
 }
 
