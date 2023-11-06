@@ -1,17 +1,17 @@
+#!bin/bash
 
 ACTION=$1
 
-if     $ACTION in
+case $ACTION in
 
-start()
-
-echo    -e "\e Ptint the name of colour =$1"
+    start)
+    
+    echo  "Print hi"
 ;;
+  
+    stop)
+    
+    echo "Print go away"
+    ;;
 
-stop()
-
-echo    "\e Name of the flower =$2"
-;;
-
-fi
-exit0
+esac
