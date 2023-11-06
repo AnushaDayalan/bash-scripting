@@ -7,3 +7,5 @@ echo a = 12
 echo b = 20
 
 echo $0
+
+echo -e "\e[31m This is my coding Linux\e[0m"
