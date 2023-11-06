@@ -1,6 +1,7 @@
 
 ACTION=$1
-case     $ACTION in
+
+if     $ACTION in
 
 start) 
 
@@ -12,4 +13,4 @@ stop)
 echo    "\e Name of the flower =$2"
 ;;
 
-esac
+fi
