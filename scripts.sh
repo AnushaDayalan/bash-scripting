@@ -14,6 +14,6 @@ echo "\e Name of the flower =$2"
 ;;
 
 restart)
-
+cd 
  echo  "hi"
 esac

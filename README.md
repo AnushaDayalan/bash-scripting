@@ -7,4 +7,4 @@ all the bash scripting and protocols needs to be addressed
 
 # linux scripting
  echo ji
- echo hi
+ echo higit
