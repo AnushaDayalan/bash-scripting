@@ -1,5 +1,4 @@
-#!/bin/bash
-ACTION=$1
+ACTION =$1
 
 case $ACTION in
 
@@ -14,5 +13,3 @@ echo "\e Name of the flower =$2"
 ;;
 
 esac
-
-
