@@ -1,10 +1,18 @@
 #!/bin/bash
+ACTION=$1
 
-Date="$(date +%F)"
+case $ACTION in
 
-echo -e "\e[33;44m Today date is $Date \e[0m"
+start) 
 
-#echo -e "\e[33:43m Print these two colours \e[0m"
+echo -e "\e Ptint the name of colour =$1"
+;;
 
+stop)
+
+echo "\e Name of the flower =$2"
+;;
+
+esac
 
 
