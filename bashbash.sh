@@ -1,16 +1,18 @@
-#!bin/bash
-echo hi all
+stat() {
 
-case $ACTION in
+echo -e "\e[34m Show todays date =$(date +%F)\e[0m"
 
-    start)
-    
-    echo  "Print hi"
-;;
-  
-    stop)
-    
-    echo "Print go away"
-    ;;
+echo -e "\e[33m Show session_count =$(who | wc -l)\e[0m"
 
-esac
+}
+
+hello() {  
+
+    echo  "hi this is anusha dayalan performing coding $1"
+    echo "learning daily linux is useful for $2"
+
+}
+
+hello
+stat
+echo "Show uptime $(uptime | awk  -F : '{print $NF}')"
