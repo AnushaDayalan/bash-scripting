@@ -1,11 +1,15 @@
-echo  -e "\e[33m hi yellow \e[0m"
+ACTION =$1
 
-echo -e "\e[33;34m this is true \e[0m"
+case $ACTION in
 
-echo -e "\e[33:43m Print these two colours \e[0m"
-echo a = 12
-echo b = 20
+start) 
 
-echo $0
+echo -e "\e Ptint the name of colour =$1"
+;;
 
-echo -e "\e[31m This is my coding Linux\e[0m"
+stop)
+
+echo "\e Name of the flower =$2"
+;;
+
+esac
