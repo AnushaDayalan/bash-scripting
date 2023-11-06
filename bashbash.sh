@@ -1,8 +1,6 @@
 #!bin/bash
 echo hi all
 
-ACTION=$1
-
 case $ACTION in
 
     start)
