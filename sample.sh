@@ -1,14 +1,7 @@
-Session_Count=$(who | wc -l)
+Session_Count = $1
 
-echo -e "\e PPrint the sessioncounts as = $Session_Count"
+echo -e "\e Print date = (date +%F)"
 
-Date=$(date +%F)
+echo -e "\e Print Session_Count = (who | wc -l)"
 
-
-echo -e "\e PPrint todays date = $Date"
-
-echo "\e Talented_Person=$1"
-
-echo -e "\e PPrint talented person =$2"
-
-echo -e "\e Print my school name as =$3"
+echo -e "\e[31m  Print hi my name is Anusha Linux\e[0m"
