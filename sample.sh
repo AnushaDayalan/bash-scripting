@@ -1,7 +1,13 @@
-Session_Count = $1
+echo -e "\e[32m Print the colour red\e[0m"
 
-echo -e "\e Print date = (date +%F)"
+echo "\e Session _count = $1"
 
-echo -e "\e Print Session_Count = (who | wc -l)"
+case
 
-echo -e "\e[31m  Print hi my name is Anusha Linux\e[0m"
+Action : Stop{
+
+    echo "\e Print stop"
+
+    start 
+    
+esac
