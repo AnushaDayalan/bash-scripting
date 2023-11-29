@@ -10,7 +10,7 @@ exit 1
 fi
 
 echo -e "******** \e[35m Configuration frontend \e[0m******"
-echo  "Installing nginx"
+echo  -n "Installing nginx :"
 yum install nginx -y  &>> /tmp/frontend .log
 
 if [ $? -eq 0 ] ; then
