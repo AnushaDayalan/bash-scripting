@@ -1,7 +1,5 @@
 
-echo -n "\e Configuring $1"
 
-mv frontend-main/* .
 mv static/* .
 rm -rf frontend-master README.md
 mv localhost.conf /etc/nginx/default.d/roboshop.conf  &>> /tmp/frontend .log
