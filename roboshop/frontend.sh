@@ -31,7 +31,7 @@ fi
 
 echo "\n Cleaning up the component $1"
 cd /usr/share/nginx/html
-rm -rf * 
+rm -rf *   &>> /tmp/frontend .log
 
 if [ $? -eq 0 ] ; then
  echo -e "\e[36m SUCCESS \e[0m"
@@ -47,7 +47,7 @@ echo -n "\e Configuring $1"
 mv frontend-main/* .
 mv static/* .
 rm -rf frontend-master README.md
-mv localhost.conf /etc/nginx/default.d/roboshop.conf
+mv localhost.conf /etc/nginx/default.d/roboshop.conf  &>> /tmp/frontend .log
 
 if [ $? -eq 0 ] ; then
  echo -e "\e[36m SUCCESS \e[0m"
@@ -57,9 +57,9 @@ fi
 
 echo -e "\n[13m Restarting the nginx[0m"
 
-systemctl enable nginx 
-systemctl daemon-reload nginx
-systemctl re-start nginx 
+systemctl enable nginx   &>> /tmp/frontend .log
+systemctl daemon-reload nginx  &>> /tmp/frontend .log
+systemctl restart nginx   &>> /tmp/frontend .log
 
 if [ $? -eq 0 ] ; then
  echo -e "\e[36m SUCCESS \e[0m"
