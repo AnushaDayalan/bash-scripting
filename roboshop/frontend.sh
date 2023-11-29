@@ -3,7 +3,7 @@ echo -e -n"\e[33m Restarting the nginx $1 \e[0m"
 
 systemctl enable nginx   &>> /tmp/frontend .log
 systemctl daemon-reload   &>> /tmp/frontend .log
-systemctl restart nginx      &>> /tmp/frontend .log
+systemctl start nginx      &>> /tmp/frontend .log
 ##systemctl restart nginx    &>> /tmp/frontend .log
 
 if [ $? -eq 0 ] ; then
