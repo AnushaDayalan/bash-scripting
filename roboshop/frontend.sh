@@ -39,7 +39,7 @@ if [ $? -eq 0 ] ; then
  echo -e "\e[33m  FAILURE \e[0m"
 fi
 
-echo -e "\n\e[31m UNZIP the frontend $1\e[0m"
+echo -e "\e[31m UNZIP the frontend $1\e[0m"
 unzip /tmp/frontend.zip   &>> /tmp/frontend .log
 
 echo -n "\e Configuring $1"
@@ -55,10 +55,10 @@ if [ $? -eq 0 ] ; then
  echo -e "\e[33m  FAILURE \e[0m"
 fi
 
-echo -e "\n\e[33m Restarting the nginx $1 \e[0m"
+echo -e -n"\e[33m Restarting the nginx $1 \e[0m"
 
 systemctl enable nginx   &>> /tmp/frontend .log
-systemctl daemon-reload nginx  &>> /tmp/frontend .log
+systemctl daemon-reload   &>> /tmp/frontend .log
 systemctl restart nginx    &>> /tmp/frontend .log
 
 if [ $? -eq 0 ] ; then
