@@ -39,8 +39,14 @@ if [ $? -eq 0 ] ; then
  echo -e "\e[33m  FAILURE \e[0m"
 fi
 
-echo -e "UNZIP the frontend $1"
+echo  "UNZIP the frontend $1"
 unzip /tmp/frontend.zip   &>> /tmp/frontend .log
+
+if [ $? -eq 0 ] ; then
+ echo -e "\e[36m SUCCESS \e[0m"
+    else
+ echo -e "\e[33m  FAILURE \e[0m"
+fi
 
 echo -n "\e Configuring $1"
 
