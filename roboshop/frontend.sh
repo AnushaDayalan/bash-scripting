@@ -1,8 +1,8 @@
 #!/bin/bash
 
-UID=$(id -u)
+USER_ID=$(id -u)
 
-if [ $UID -ne 0 ] ; then
+if [ $USER_ID -ne 0 ] ; then
 echo -e "\e[33m This script is pritned as non sudo user\e[0m"
 echo -e "\e example : \n \t\t sudo bash comp"
 exit 1
