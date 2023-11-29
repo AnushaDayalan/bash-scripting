@@ -40,7 +40,7 @@ if [ $? -eq 0 ] ; then
 fi
 
 echo -e "\n[31m UNZIP the frontend $1\e[0m"
-unzip /tmp/frontend.zip
+unzip /tmp/frontend.zip   &>> /tmp/frontend .log
 
 echo -n "\e Configuring $1"
 
