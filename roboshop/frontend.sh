@@ -28,3 +28,7 @@ if [ $? -eq 0 ] ; then
  echo -e "\e[33m Nginx FAILURE \e[0m"
 fi
 exit 2
+
+echo "\n Cleaning up the component $1"
+cd /usr/share/nginx/html
+rm -rf * 
