@@ -9,6 +9,6 @@ exit 1
 
 fi
 
-echo -e "******** \e[35m Configuration $1 \e[0m******"
+echo -e "******** \e[35m Configuration frontend \e[0m******"
 echo  "Installing nginx"
-yum install nginx -y  > /tmp/$1.log
+yum install nginx -y  > /tmp/frontend .log
