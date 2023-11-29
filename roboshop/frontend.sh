@@ -1,3 +1,3 @@
 #!/bin/bash
 
-echo "\e[31m******** Configuration FRONTEND \e[0m******"
+echo -e "******** \e[35m Configuration FRONTEND \e[0m******"
