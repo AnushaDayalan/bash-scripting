@@ -59,7 +59,7 @@ echo -e "\n[13m Restarting the nginx[0m"
 
 systemctl enable nginx   &>> /tmp/frontend .log
 systemctl daemon-reload nginx  &>> /tmp/frontend .log
-systemctl restart nginx   &>> /tmp/frontend .log
+systemctl restart nginx    &>> /tmp/frontend .log
 
 if [ $? -eq 0 ] ; then
  echo -e "\e[36m SUCCESS \e[0m"
