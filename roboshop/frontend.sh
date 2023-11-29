@@ -55,7 +55,7 @@ if [ $? -eq 0 ] ; then
  echo -e "\e[33m  FAILURE \e[0m"
 fi
 
-echo -e "\n[33m Restarting the nginx[0m"
+echo -e "\n\e[33m Restarting the nginx\e[0m"
 
 systemctl enable nginx   &>> /tmp/frontend .log
 systemctl daemon-reload nginx  &>> /tmp/frontend .log
