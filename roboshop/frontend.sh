@@ -3,8 +3,7 @@
 echo -e "******** \e[35m Configuration FRONTEND \e[0m******"
 
 echo -e "Installing nginx :"
-
-# yum install nginx -y
+yum install nginx -y
 # systemctl enable nginx 
 # systemctl start nginx 
 
