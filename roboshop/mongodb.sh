@@ -6,7 +6,7 @@ LOGFILE="/tmp/$(COMPONENT).log"
 REPO="https://raw.githubusercontent.com/stans-robot-project/mongodb/main/mongo.repo"
 stat() { 
 
-    if [ $1 -eq 0 ] ; then
+    if [ $# -eq 0 ] ; then
         echo -e "\e[33m Success\e[0m"
     else
         echo -e  "\e[35m fail \e[0m"
@@ -34,13 +34,13 @@ stat $?
 
 
 echo -e "\e Installing $COMPONENT"
-##yum install -y mongodb-org
+yum install -y mongodb-org
 
-echo -n "\e [31m Enabling config file\e[0m"
+echo -n "\e[31m Enabling config file\e[0m"
 sed -i -e 's/127.0.0.1/0.0.0.0/' mongod.conf
 stat $?
 
-echo -e "\e[33m Mongodb RESTARTING\e[0m"
+echo -e "\e[33m Mongodb RESTARTING $(COMPONENT)\e[0m"
 systemctl enable mongod  &>>/tmp/mongodb .log
 systemctl daemon-reload mongod  &>>/tmp/mongodb .log
 systemctl start mongod   &>>/tmp/mongodb .log
