@@ -37,8 +37,8 @@ echo -e "\e Installing $COMPONENT"
 yum install -y mongodb-org
 
 echo -e "\e[33m Mongodb RESTARTING\e[0m"
-systemctl stop mongod  &>>/tmp/mongodb .log
-##systemctl start mongod   &>>/tmp/mongodb .log
+systemctl enable mongod  &>>/tmp/mongodb .log
+systemctl start mongod   &>>/tmp/mongodb .log
 stat $?
 
 exit 2
