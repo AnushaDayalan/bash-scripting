@@ -10,6 +10,7 @@ stat() {
         echo  "\e success"
     else
         echo  "\e fail"
+        fi
 }
 
 
