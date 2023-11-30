@@ -1,4 +1,3 @@
-#!/bin/bash
 
 USER_UID=$(id -u)
 
@@ -12,4 +11,4 @@ echo -e -n "\e[33m MONGODB INSTALLED SUCCESSFULLY \e[0m"
 fi
 exit 1
 
-yum install -y mongodb-org
+yum install -y mongodb-org  &>> /tmp/mongodb .log
