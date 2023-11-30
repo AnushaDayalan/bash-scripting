@@ -1,12 +1,10 @@
-#!/bin/bash
-
 USER_ID=$(id -u)
-COMPONENT=$mongodb
+COMPONENT=mongodb
 ##LOGFILE= "/tmp/$(COMPONENT).log"
 REPO="https://raw.githubusercontent.com/stans-robot-project/mongodb/main/mongo.repo"
 stat() { 
 
-    if [$1 -eq 0 ] ; then
+    if [ $1 -eq 0 ] ; then
         echo  "\e success"
     else
         echo  "\e fail"
