@@ -4,6 +4,8 @@ USER_ID=$(id -u)
 COMPONENT=mongodb
 LOGFILE="/tmp/$(COMPONENT).log"
 REPO="https://raw.githubusercontent.com/stans-robot-project/mongodb/main/mongo.repo"
+ZIP="https://github.com/stans-robot-project/mongodb/archive/main.zip"
+
 stat() { 
 
     if [ $# -eq 0 ] ; then
@@ -40,3 +42,11 @@ systemctl enable mongod  ##$(LOGFILE)
 systemctl daemon-reload mongod ##$(LOGFILE)
 systemctl start mongod   ##$(LOGFILE)
 ##stat $?
+
+echo -e "\e[36m Unziping file $(COMPONENT)\e[0m"
+curl -s -L -o /tmp/mongodb.zip $(ZIP)
+cd /tmp
+unzip mongodb.zip
+cd mongodb-main
+mongo < catalogue.js
+mongo < users.js
