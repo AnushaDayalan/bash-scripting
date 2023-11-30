@@ -1,7 +1,7 @@
 
 USER_ID=$(id -u)
 
-if [ $USER_ID -ne 0 ] ; then
+if [ $USER_ID = 0 ] ; then
 
 echo -e -n "\e[31m DO not install MONGODB \e[0m"
 
