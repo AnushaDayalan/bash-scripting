@@ -9,7 +9,7 @@ stat() {
     if [ $1 -eq 0 ] ; then
         echo -e "\e[33m Success\e[0m"
     else
-        echo -e  "\e fail"
+        echo -e  "\e[35m fail \e[0m"
         fi
 }
 
@@ -40,4 +40,5 @@ echo -e "\e[33m Mongodb RESTARTING\e[0m"
 systemctl enable mongod  &>>/tmp/mongodb .log
 systemctl start mongod   &>>/tmp/mongodb .log
 stat $?
+
 exit 2
