@@ -26,7 +26,7 @@ curl -s -o /etc/yum.repos.d/mongodb.repo $REPO
 stat $?
 
 echo -e "\e[34m Installing $COMPONENT\e[0m"
-yum install -y mongodb-org $LOGFILE
+yum install -y mongodb-org &>> ${LOGFILE}
 stat $?
 
 
