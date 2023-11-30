@@ -2,15 +2,14 @@
 
 USER_ID=$(id -u)
 COMPONENT=mongodb
-LOGFILE= "/tmp/$(COMPONENT).log"
-REPO = "https://raw.githubusercontent.com/stans-robot-project/mongodb/main/mongo.repo"
+##LOGFILE= "/tmp/$(COMPONENT).log"
+REPO="https://raw.githubusercontent.com/stans-robot-project/mongodb/main/mongo.repo"
 stat() { 
 
     if [$1 -eq 0 ] ; then
-        echo -e "\e success"
-
+        echo  "\e success"
     else
-        echo -e "\e fail"
+        echo  "\e fail"
 }
 
 
@@ -18,6 +17,7 @@ if  [ $USER_ID -ne 0 ]; then
 
     echo -n "\e need to run as sudo"
 fi
+
 exit 1
 
 echo "****** \e confguring $(COMPONENT) repo ******"
