@@ -21,7 +21,7 @@ if  [ $USER_ID -ne 0 ]; then
 fi
 
 
-echo "****** \e[32m confguring $COMPONENT repo ******\e[0m"
+echo -e "******\e[32m confguring $COMPONENT repo ******\e[0m"
 curl -s -o /etc/yum.repos.d/mongodb.repo $REPO
 stat $?
 
@@ -35,3 +35,9 @@ stat $?
 
 echo -e "\e Installing $COMPONENT"
 yum install -y mongodb-org
+
+echo -e "\e[33m Mongodb RESTARTING\e[0m"
+systemctl enable mongod  &>>/tmp/mongodb .log
+systemctl start mongod   &>>/tmp/mongodb .log
+stat $?
+exit 2
