@@ -6,7 +6,7 @@ LOGFILE="/tmp/$(COMPONENT).log"
 REPO="https://raw.githubusercontent.com/stans-robot-project/mongodb/main/mongo.repo"
 stat() { 
 
-    if [ $1 -eq 0 ] ; then
+    if [ $# -eq 0 ] ; then
         echo -e "\e[33m Success\e[0m"
     else
         echo -e  "\e[35m fail \e[0m"
