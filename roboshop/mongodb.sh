@@ -1,8 +1,8 @@
 #!/bin/bash
 
-yum install -y mongodb-org  &>> /tmp/ mongodb .log
+yum install -y mongodb-org  
 
-if [ $? -eq 0 ] ; then
+if [ $? -eq 1 ] ; then
 echo -e "\e Success"
 
 else
