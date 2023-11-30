@@ -21,9 +21,9 @@ fi
 
 exit 1
 
-echo "****** \e confguring $(COMPONENT) repo ******"
+echo "****** \e confguring $COMPONENT repo ******"
 curl -s -o /etc/yum.repos.d/mongodb.repo $REPO
 stat $?
 
-echo -e "\e Installing $(COMPONENT)"
+echo -e "\e Installing $COMPONENT"
 yum install -y mongodb-org
