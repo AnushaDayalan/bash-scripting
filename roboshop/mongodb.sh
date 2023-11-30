@@ -2,7 +2,7 @@
 
 USER_ID=$(id -u)
 COMPONENT=mongo
-##LOGFILE="/tmp/$(COMPONENT).log"
+LOGFILE="/tmp/$(COMPONENT).log"
 REPO="https://raw.githubusercontent.com/stans-robot-project/mongodb/main/mongo.repo"
 stat() { 
 
@@ -26,7 +26,7 @@ curl -s -o /etc/yum.repos.d/mongodb.repo $REPO
 stat $?
 
 echo -e "\e[34m Installing $COMPONENT\e[0m"
-yum install -y mongodb-org &>> /tmp/mongodb .log
+yum install -y mongodb-org &>> /tmp/$(COMPONENT) .log
 stat $?
 
 
