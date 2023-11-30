@@ -44,7 +44,7 @@ systemctl start mongod   ##$(LOGFILE)
 ##stat $?
 
 echo -e "\e[36m Unziping file $(COMPONENT)\e[0m"
-curl -s -L -o /tmp/mongodb.zip $(ZIP)
+curl -s -L -o /tmp/mongodb.zip $ZIP
 cd /tmp
 unzip mongodb.zip
 cd mongodb-main
