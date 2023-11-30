@@ -1,7 +1,7 @@
 #!/bin/bash
 
 USER_ID=$(id -u)
-COMPONENT=mongodb
+COMPONENT=$mongodb
 ##LOGFILE= "/tmp/$(COMPONENT).log"
 REPO="https://raw.githubusercontent.com/stans-robot-project/mongodb/main/mongo.repo"
 stat() { 
@@ -16,7 +16,7 @@ stat() {
 
 if  [ $USER_ID -ne 0 ]; then
 
-    echo -n "\e need to run as sudo"
+    echo -n " \e need to run as sudo "
 fi
 
 exit 1
@@ -26,5 +26,4 @@ curl -s -o /etc/yum.repos.d/mongodb.repo $REPO
 stat $?
 
 echo -e "\e Installing $(COMPONENT)"
-yum install -y mongodb-org 
-
+yum install -y mongodb-org
