@@ -3,7 +3,7 @@
 USER_ID=$(-id -u)
 COMPONENT=catalogue
 URL="https://rpm.nodesource.com/pub_16.x/nodistro/repo/nodesource-release-nodistro-1.noarch.rpm"
-LOGFILE="/tmp/$COMPONENT.log"
+LOGFILE="/tmp/$(COMPONENT).log"
 
 if 
 [ USER_ID -ne 0 ]; then
@@ -22,5 +22,10 @@ echo -e -n "\e [34m Fail\e[0m"
 fi
 } 
 
-echo -n "\e[31m Installation of NODEJS for $COMPONENT \e[0m"
+echo -n "\e[31m COnf of NODEJS for $COMPONENT \e[0m"
+curl --silent --location  install https://rpm.nodesource.com/pub_16.x  |sudo bash -
+stat $?
+
+echo -n "\e[33m Installing NodeJS \e[0m"
 yum install nodejs -y $URL &>> $LOGFILE
+stat $?
