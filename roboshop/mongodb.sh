@@ -44,7 +44,7 @@ curl -s -L -o /tmp/mongodb.zip $ZIP
 stat $?
 
 echo -n "\e [33m Extracting the $COMPONENT\e[0m"
-unzip -o /tmp/mongodb.zip  &>> $LOGFILE
+unzip -o /tmp/mongodb.zip git 
 
 echo -n " Injecting database schema"
 
