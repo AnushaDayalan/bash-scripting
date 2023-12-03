@@ -7,7 +7,7 @@ LOGFILE="/tmp/$COMPONENT.log"
 
 stat()
 { 
-    if [ $# -eq 0 ] then
+    if [ $# -eq 0 ]; then
 
 echo -e -n "\e [33m Success\e[0m"
 
