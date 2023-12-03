@@ -7,7 +7,7 @@ LOGFILE="/tmp/$(COMPONENT).log"
 
 if 
 [ $USER_ID -ne 0 ] ; then
-echo -n "\e[35m Print as sudo user\e[0m"
+echo -n -e "\e[35m Print as sudo user\e[0m"
 exit 1
 fi
 
@@ -15,14 +15,14 @@ stat()
 { 
     if [ $1 -eq 0 ]; then
 
-echo -e -n "\e [33m Success\e[0m"
+echo -e -n "Success"
 
 else
-echo -e -n "\e [34m Fail\e[0m"
+echo -e -n "Fail"
 fi
 } 
 
-echo -n "COnf of NODEJS for $COMPONENT: "
+echo -n "COnf of NODEJS for $COMPONENT:"
 curl --silent --location  install https://rpm.nodesource.com/pub_16.x  |sudo bash -
 stat $?
 
