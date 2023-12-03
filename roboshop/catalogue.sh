@@ -3,16 +3,15 @@
 ##USER_ID=
 COMPONENT=catalogue
 URL="https://rpm.nodesource.com/pub_16.x/nodistro/repo/nodesource-release-nodistro-1.noarch.rpm"
-LOGFILE="/tmp/$(COMPONENT).log"
+LOGFILE="/tmp/$COMPONENT.log"
 
 stat()
 { 
-    if [$# -eq 0] then
+    if [ $# -eq 0 ] then
 
 echo -e -n "\e [33m Success\e[0m"
 
 else
-
 echo -e -n "\e [34m Fail\e[0m"
 fi
 } 
