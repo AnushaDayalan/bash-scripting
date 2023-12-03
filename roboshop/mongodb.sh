@@ -23,26 +23,32 @@ fi
 
 echo -e "******\e[32m confguring $COMPONENT repo ******\e[0m"
 curl -s -o /etc/yum.repos.d/mongodb.repo $REPO
-stat $?
+stat $?         
 
 echo -e "\e[34m Installing $COMPONENT\e[0m"
-yum install -y mongodb-org &>> $(LOGFILE)
+yum install -y mongodb-org &>> $LOGFILE
 stat $?
 
 echo -e "\e[31m Enabling config file\e[0m"
-sed -i -e 's/127.0.0.1/0.0.0.0/' mongod.conf
-##stat $?
+sed -i -e 's/127.0.0.1/0.0.0.0/' /etc/mongod.conf
+stat $?
 
-echo -e "\e[33m Mongodb RESTARTING $(COMPONENT)\e[0m"
+echo -e "\e[33m Mongodb RESTARTING $COMPONENT\e[0m"
 systemctl enable mongod  ##$(LOGFILE)
-systemctl daemon-reload mongod ##$(LOGFILE)
-systemctl start mongod   ##$(LOGFILE)
-##stat $?
+systemctl daemon-reload ##$(LOGFILE)
+systemctl start mongod  ##$(LOGFILE)
+stat $?
 
-echo -e "\e[36m Unziping file $(COMPONENT)\e[0m"
+echo -e "\e[36m Unziping file $COMPONENT\e[0m"
 curl -s -L -o /tmp/mongodb.zip $ZIP
-cd /tmp
-unzip mongodb.zip  $(LOGFILE)
-cd mongodb-main
+stat $?
+
+echo -n "\e [33m Extracting the $COMPONENT\e[0m"
+unzip -o /tmp/mongodb.zip  &>> $LOGFILE
+
+echo -n " Injecting database schema"
+
+cd /tmp/mongodb-main
 mongo < catalogue.js  
 mongo < users.js     
+stat $?
