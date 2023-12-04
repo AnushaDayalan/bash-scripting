@@ -20,9 +20,10 @@ echo -e -n "Success"
 else
 echo -e -n "Fail"
 fi
+
 } 
 
-echo -n "COnf of NODEJS :"
+echo -n "Configuration of NODEJS :"
 yum install https://rpm.nodesource.com/pub_16.x/nodistro/repo/nodesource-release-nodistro-1.noarch.rpm -y  |sudo bash -
 stat $?
 
