@@ -1,7 +1,7 @@
-import yaml
+import yml
 
 with open('first.yml','r') as file:
     try:
-        print(yaml.safe_load(file))
-    except yaml.YAMLError as exc:
+        print(yyml.safe_load(file))
+    except yml.YAMLError as exc:
         print(exc)
